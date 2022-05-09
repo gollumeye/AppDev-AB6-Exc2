@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AppDev-Sheet5-Exc2-BottomNavigation</string>
+    <string name="title_home">Unit Converter</string>
+    <string name="title_dashboard">Currency Converter</string>
+    <string-array name="spinner_array">
+        <item>meter to inch</item>
+        <item>inch to meter</item>
+        <item>celsius to fahrenheit</item>
+        <item>fahrenheit to celcius</item>
+        <item>kilometers to miles</item>
+        <item>miles to kilometers</item>
+        <item>knots to meter per second</item>
+        <item>meter per second to knots</item>
+    </string-array>
+</resources>
