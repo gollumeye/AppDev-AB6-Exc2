@@ -1,10 +1,12 @@
 package com.example.appdev_sheet5_exc2_bottomnavigation.ui.CurrencyConverter;
 
 import android.os.Bundle;
+import android.transition.TransitionInflater;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextSwitcher;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.appdev_sheet5_exc2_bottomnavigation.R;
 import com.example.appdev_sheet5_exc2_bottomnavigation.databinding.FragmentCurrencyConverterBinding;
 
 public class CurrencyConverterFragment extends Fragment {
@@ -25,6 +28,10 @@ public class CurrencyConverterFragment extends Fragment {
 
         binding = FragmentCurrencyConverterBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+        TransitionInflater transitionInflater = TransitionInflater.from(requireContext());
+        setExitTransition(transitionInflater.inflateTransition(R.transition.fade));
+        setEnterTransition(transitionInflater.inflateTransition(R.transition.fade));
 
         Button calculateButton = binding.button2;
         calculateButton.setOnClickListener(e->{
