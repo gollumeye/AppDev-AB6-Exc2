@@ -14,7 +14,8 @@
         android:layout_marginTop="16dp"
         android:text="National currency:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextViewStyle"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -24,7 +25,8 @@
         android:layout_marginTop="48dp"
         android:text="Conversion Factor:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        style="@style/TextViewStyle"/>
 
     <TextView
         android:id="@+id/textView5"
@@ -34,7 +36,8 @@
         android:layout_marginTop="48dp"
         android:text="Foreign currency:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        style="@style/TextViewStyle"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout4"
@@ -91,5 +94,6 @@
         android:text="CALCULATE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
+        style="@style/ButtonStyle"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
